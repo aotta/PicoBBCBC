@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,LCSC,Quantity
+SW_Push,SW1,SW_PUSH_6mm,,1
+Conn_01x20,J1,PinSocket_1x20_P2.54mm_Vertical,,1
+Diode,D1,D_DO-35_SOD27_P7.62mm_Horizontal,,1
+Conn_01x20,J2,PinSocket_1x20_P2.54mm_Vertical,,1
+Conn_02x20_Counter_Clockwise,E1,BBC_Bridge_Companion_Edge_40Pin,,1

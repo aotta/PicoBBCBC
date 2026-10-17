@@ -1,0 +1,6 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+D1,Diode,D_DO-35_SOD27_P7.62mm_Horizontal,84.7,-58.83,-90.0,top
+E1,Conn_02x20_Counter_Clockwise,BBC_Bridge_Companion_Edge_40Pin,106.54,-147.12,0.0,top
+J1,Conn_01x20,PinSocket_1x20_P2.54mm_Vertical,106.47,-48.11,90.0,top
+J2,Conn_01x20,PinSocket_1x20_P2.54mm_Vertical,106.45,-30.31,90.0,top
+SW1,SW_Push,SW_PUSH_6mm,127.03,-58.49,90.0,top
