@@ -54,10 +54,10 @@ gasm80 splash.asm -o splash.bin
 ```
 
 ### Pico Firmware
-1. Open `PicoBBCBC.ino` in the Arduino IDE.
-2. Install the **Raspberry Pi Pico/RP2040** board support package.
-3. Ensure your file loading functions are designated with `const char*` signatures to match modern ISO C++ standards.
-4. Compile and upload the code to your Pico clone.
+1. First time, flash must be formatted and ROM loaded. So, only the first time, you must upoad on pico the FW **`PicoBBCBC_FirstRun.uf2`**.
+2. Format the flash RAM when asked by window and then load the ROMs **with the same name i used in the ROM folder** (the filenames are hardcoded in FW).
+3. Now, you have to **reflash the Pico with the FW ad on pico the FW **`PicoBBCBC.ino.uf2`**.
+4. Enjoy your multicart.
 
 ---
 
