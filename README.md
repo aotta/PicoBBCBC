@@ -11,7 +11,7 @@ Here is the hardware implementation of the multicart PCB and assembly:
 
 | Cartridge PCB | Fully Assembled Unit |
 |:---:|:---:|
-| <img src="pictures/pcb.jpg" width="400" alt="PicoBBCBC PCB"> | <img src="pictures/assembled.jpg" width="400" alt="PicoBBCBC Assembled"> |
+| <img src="pictures/bbcbc1.jpg" width="400" alt="PicoBBCBC PCB"> | <img src="pictures/BBCBC2.jpg" width="400" alt="PicoBBCBC Assembled"> |
 
 *(Note: Please ensure your image filenames inside the `pictures/` folder match `pcb.jpg` and `assembled.jpg`, or update the paths above accordingly!)*
 
@@ -22,13 +22,15 @@ Here is the hardware implementation of the multicart PCB and assembly:
 1. **The Z80 Frontend Menu**: Upon boot, a custom splash screen and menu written in pure Z80 Assembly initializes the TMS9129 VDP (Video Display Processor) and the Z80PIO chip.
 2. **Menu Navigation**: The console's dedicated keyboard matrix is scanned continuously.
    * Press **PASS** to scroll **UP**.
-   * Press **SPADES (Picche)** to scroll **DOWN**.
-   * Press **CLUBS (Fiori)** to **SELECT/START** the highlighted game.
+   * Press **SPADES ** to scroll **DOWN**.
+   * Press **CLUBS (** to **SELECT/START** the highlighted game.
 3. **Address-Bus Triggering**: Once a game is selected, the cursor flashes as a confirmation feedback. The Z80 CPU then enters a tight loop, constantly reading from a specific ROM address range:
-   \[\text{Target Address} = \$7000 + \text{Game Index (0-8)}\]
+   \[\text{Target Address} = \$5000 + \text{Game Index (0-8)}\]
 4. **Pico Bank-Switching**: The Raspberry Pi Pico acts as a bus sniffer. It detects the continuous read cycles (`MREQ` and `RD` active) on the targeted address within the `$7000–$7008` window. It instantly switches the memory bank to the selected game ROM and triggers a hardware reset to boot the new title.
 
 ---
+## IMPORTANT NOTE: by mistake, I designed the edge connector REVERSED, so the cartridge *MUST* be inserted with pico facing down!
+
 
 ## Project Structure
 
