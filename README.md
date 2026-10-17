@@ -11,7 +11,7 @@ Here is the hardware implementation of the multicart PCB and assembly:
 
 | Cartridge PCB | Fully Assembled Unit |
 |:---:|:---:|
-| <img src="pictures/bbcbc1.jpg" width="400" alt="PicoBBCBC PCB"> | <img src="pictures/BBCBC2.jpg" width="400" alt="PicoBBCBC Assembled"> |
+| <img src="pictures/BBCBC1.jpg" width="400" alt="PicoBBCBC PCB"> | <img src="pictures/BBCBC2.jpg" width="400" alt="PicoBBCBC Assembled"> |
 
 *(Note: Please ensure your image filenames inside the `pictures/` folder match `pcb.jpg` and `assembled.jpg`, or update the paths above accordingly!)*
 
